@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Santanu's Mini Portfolio</title>
+    <meta name="author" content="Santanu" />
+    <meta name="description" content="Santanu's Mini Portfolio" />
+    <meta name="keywords"
+        content="fullpage,software engineer, portfolio, shaantalk, santanu, santanu panda, santanupanda" />
+    <meta name="Resource-type" content="Document" />
+
+    <link rel="stylesheet" type="text/css" href="static/css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap" rel="stylesheet">
+
+    <!-- TODO -->
+    <!-- Add Google Tag Manager or Google Analytics Tags -->
+    <!-- Add Social Meta Tags  -->
+
+    <link rel='icon' href='favicon.ico' type='image/x-icon' />
+
+    <!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+
+    <div id="fullpage">
+        <div class="section " id="section0">
+            <div>
+                <h1>
+                    Hi, I am Santanu
+                </h1>
+                <h5>
+                    <a href="https://shaantalk.github.io/">See my full portfolio page</a>
+                </h5>
+            </div>
+        </div>
+        <div class="section" id="section1">
+            <div>
+                <h1>
+                    I am a Software Engineer at
+                    <a href="https://www.lowes.co.in/">Lowe's</a>
+                </h1>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div>
+                <h1>
+                    I specialize in website building and UI technologies
+                </h1>
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <div>
+                <h1>
+                    I love doing open source projects and post it on GitHub.
+                </h1>
+            </div>
+        </div>
+        <div class="section" id="section4">
+            <div>
+                <div class="socials">
+                    <h1 class="social_header"> still curious? </h1> <br>
+                    <!-- this is not my email... please don't email this address! -->
+                    <h1> <a href="mailto:shaantalk@gmail.com" target="_top" title="shoot me an email">email me</a></h1>
+                    <br>
+
+                    <h1><a href="https://www.linkedin.com/in/shaantalk/" target="__blank"
+                            title="find me on linkedin">linkedin </a>
+                    </h1> <br>
+
+                    <h1><a href="https://github.com/shaantalk" target="__blank" title="see my GitHub projects">GitHub
+                        </a></h1> <br>
+
+                    <h1><a href="https://wa.me/917866040088" target="__blank">
+                            Whatsapp </a> </h1> <br>
+
+                    <h1><a href="https://github.com/shaantalk/MyResume/raw/master/SantanuPanda_Resume.pdf"
+                            target="__blank" title="scan my resume">resume </a></h1> <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="static/js/fullpage.js"></script>
+    <script src="static/js/fitty.min.js"></script>
+
+    <!-- optimizes the loading of the page -->
+    <script defer>
+        fitty('h1', {
+            minSize: 40,
+            maxSize: 64
+        });
+    </script>
+    <script defer>
+        fitty('h5 a', {
+            minSize: 25,
+            maxSize: 34
+        });
+    </script>
+
+    <script type="text/javascript">
+        var secColorArr = []
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            secColorArr = ['#121212', '#222222', '#2d2d2d', '#363636', '#3f3f3f']
+        }
+        else {
+            secColorArr = ['#6a1b9a', '#7b1fa2', '#8e24aa', '#9c27b0', '#ab47bc']
+        }
+        var myFullpage = new fullpage('#fullpage', {
+            anchors: ['about', 'career', 'work', 'github', 'social'],
+            sectionsColor: secColorArr,
+            scrollBar: true,
+            scrollingSpeed: 600,
+            navigation: true
+        });
+    </script>
+
+</body>
+
+</html>
